@@ -20,7 +20,8 @@ import androidx.navigation.NavController
 @Composable
 fun PedidosScreen(
     navController: NavController,
-    numeroPedido: String
+    numeroPedido: String,
+
 ) {
     Box(
         modifier = Modifier.fillMaxSize()

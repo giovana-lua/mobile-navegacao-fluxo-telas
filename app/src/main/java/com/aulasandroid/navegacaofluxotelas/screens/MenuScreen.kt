@@ -43,7 +43,7 @@ fun MenuScreen(navController: NavController) {
         ) {
 
             Button(
-                onClick = {navController.navigate("perfil/Giovana")},
+                onClick = {navController.navigate("perfil/Giovana/21")},
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color.White
                 ),
@@ -73,7 +73,8 @@ fun MenuScreen(navController: NavController) {
                 }
 
                     Button(
-                        onClick = {navController.navigate("login") },
+                        //popBackStack em vez de voltar para a tela anterior ele sai do app
+                        onClick = {navController.popBackStack() },
                         colors = ButtonDefaults.buttonColors(
                             containerColor = Color.White
                         ),
